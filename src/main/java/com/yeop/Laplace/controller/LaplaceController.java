@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class LaplaceConroller {
+public class LaplaceController {
     @GetMapping("/")
     @ResponseBody
     public String main() {

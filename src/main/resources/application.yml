@@ -1,0 +1,21 @@
+# spring.application.name=Laplace
+
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/laplace
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: minyeop
+    password: skekd12
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true #To beautify or pretty print the SQL
+        show_sql: true #show sql
+
+logging:
+  level:
+    org.hibernate.SQL: debug

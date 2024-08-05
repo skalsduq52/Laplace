@@ -1,9 +1,6 @@
 package com.yeop.Laplace.VO;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,7 +11,11 @@ import lombok.Setter;
 
 public class User {
     @Id
-    @Column(name = "USERID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "OID")
+    private Long OID;
+
+    @Column(name = "USERID", nullable = false )
     private String userId;
 
     @Column(name = "NAME", nullable = false)

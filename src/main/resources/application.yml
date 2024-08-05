@@ -2,7 +2,7 @@
 
 spring:
   datasource:
-    url: jdbc:mariadb://127.0.0.1:3306/laplace
+    url: jdbc:mariadb://175.214.118.23:3306/laplace
     driver-class-name: org.mariadb.jdbc.Driver
     username: minyeop
     password: skekd12

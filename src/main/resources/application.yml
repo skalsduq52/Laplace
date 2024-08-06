@@ -7,7 +7,6 @@ spring:
     username: minyeop
     password: skekd12
 
-
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:

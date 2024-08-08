@@ -2,7 +2,6 @@ package com.yeop.Laplace.controller.user;
 
 import com.yeop.Laplace.VO.User;
 import com.yeop.Laplace.repository.UserRepository;
-import com.yeop.Laplace.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequestMapping("/users")
-@Tag(name = "유저", description = "유저 관련 api 입니다.")
 @RestController
 public class UserController {
 

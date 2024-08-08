@@ -22,7 +22,7 @@ public class SwaggerConfig {
 
     @Bean
     public GroupedOpenApi api() {
-        String[] paths = {"/**"};
+        String[] paths = {"/users/**"};
         String[] packagesToScan = {"com.yeop.Laplace"};
         return GroupedOpenApi.builder().group("springdoc-openapi")
                 .pathsToMatch(paths)

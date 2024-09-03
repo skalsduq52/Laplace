@@ -3,22 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
-
-
 function test(characterName) {
-    const req = {
-        character : characterName
-    };
-
-    fetch("http://127.0.0.1:8080/loa)",{
+    fetch("http://127.0.0.1:8080/loa/test",{
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(req),
+        body: JSON.stringify(characterName),
     })
-    console.log("req");
-    console.log(JSON.stringify(req));
 }
 
 function App() {

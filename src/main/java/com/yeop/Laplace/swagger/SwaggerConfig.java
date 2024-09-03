@@ -15,9 +15,9 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("springdoc-openapi")
+                        .title("Laplace API")
                         .version("1.0")
-                        .description("springdoc-openapi swagger-ui 화면입니다."));
+                        .description("Laplace API 명세서입니다."));
     }
 
     @Bean
